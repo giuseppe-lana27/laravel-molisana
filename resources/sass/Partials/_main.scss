@@ -8,20 +8,16 @@ main{
         text-transform: uppercase;
         color: $main_color;        
     }
-
     .cards{
         display: flex;
-        flex-wrap: wrap;        
-
+        flex-wrap: wrap;
+        padding: 5px;
         .card{
             width: calc((100% / 3 ) - 20px);
             margin: 10px;
-
             img{
                 width: 100%;
             }
         }
-    }
-
-    
+    }    
 }

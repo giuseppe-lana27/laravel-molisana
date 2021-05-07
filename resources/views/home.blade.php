@@ -5,29 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>La Molisana</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{{asset('css/app.css')}}">
     </head>
     <body>
-        <header>
-            <div class="container">
-                <div class="logo">
-                    <img src="{{asset('images/marchio-sito-test.png')}}" alt="La Molisna Logo">
-                </div>
-                <nav class="main-nav">
-                    <ul>
-                        <li class="active">
-                            <a href="#">Home</a>
-                        </li>
-                        <li>
-                            <a href="#">Prodotti</a>
-                        </li>
-                        <li>
-                            <a href="#">News</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+        @include('parts.header')
         <main>
             <div class="container">
                 {{-- prima sezione pasta lunga --}}
@@ -41,6 +24,7 @@
                         @endforeach                        
                     </div>    
                 </section>
+                {{-- /prima sezione pasta lunga --}}
                 {{-- seconda sezione pasta corta --}}
                 <section>
                     <h2 class="section-title">Le Corte</h2>
@@ -52,9 +36,10 @@
                         @endforeach                        
                     </div>    
                 </section>
+                {{-- /seconda sezione pasta corta --}}
                 {{-- terza sezione pasta cortissima --}}
                 <section>
-                    <h2 class="section-title">Le Corte</h2>
+                    <h2 class="section-title">Le Cortissime</h2>
                     <div class="cards">
                         @foreach ($cortissima as $pasta)
                             <div class="card">
@@ -63,6 +48,7 @@
                         @endforeach                        
                     </div>    
                 </section>
+                {{-- /terza sezione pasta cortissima --}}
             </div>            
         </main>        
         <footer></footer>        

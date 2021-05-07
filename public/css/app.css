@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
 .container {
   max-width: 1200px;
   width: 100%;
@@ -47,6 +51,7 @@ main .section-title {
 main .cards {
   display: flex;
   flex-wrap: wrap;
+  padding: 5px;
 }
 main .cards .card {
   width: calc((100% / 3 ) - 20px);
