@@ -28,7 +28,43 @@
                 </nav>
             </div>
         </header>
-        <main></main>        
+        <main>
+            <div class="container">
+                {{-- prima sezione pasta lunga --}}
+                <section>
+                    <h2 class="section-title">Le Lunghe</h2>
+                    <div class="cards">
+                        @foreach ($lunga as $pasta)
+                            <div class="card">
+                                <img src="{{$pasta['src']}}" alt="{{$pasta['titolo']}}">
+                            </div>
+                        @endforeach                        
+                    </div>    
+                </section>
+                {{-- seconda sezione pasta corta --}}
+                <section>
+                    <h2 class="section-title">Le Corte</h2>
+                    <div class="cards">
+                        @foreach ($corta as $pasta)
+                            <div class="card">
+                                <img src="{{$pasta['src']}}" alt="{{$pasta['titolo']}}">
+                            </div>
+                        @endforeach                        
+                    </div>    
+                </section>
+                {{-- terza sezione pasta cortissima --}}
+                <section>
+                    <h2 class="section-title">Le Corte</h2>
+                    <div class="cards">
+                        @foreach ($cortissima as $pasta)
+                            <div class="card">
+                                <img src="{{$pasta['src']}}" alt="{{$pasta['titolo']}}">
+                            </div>
+                        @endforeach                        
+                    </div>    
+                </section>
+            </div>            
+        </main>        
         <footer></footer>        
     </body>
 </html>

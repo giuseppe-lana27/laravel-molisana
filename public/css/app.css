@@ -33,3 +33,25 @@
   font-size: 22px;
   color: #000;
 }
+
+main {
+  background-image: url("/images/fondo-pag-speciali.jpg");
+  margin-top: 14px;
+  padding: 20px;
+}
+main .section-title {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #002d73;
+}
+main .cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .cards .card {
+  width: calc((100% / 3 ) - 20px);
+  margin: 10px;
+}
+main .cards .card img {
+  width: 100%;
+}

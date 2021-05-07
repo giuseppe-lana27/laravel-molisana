@@ -1,0 +1,27 @@
+main{
+    background-image: url('/images/fondo-pag-speciali.jpg');
+    margin-top: 14px;
+    padding: 20px;
+
+    .section-title{
+        font-size: 24px;
+        text-transform: uppercase;
+        color: $main_color;        
+    }
+
+    .cards{
+        display: flex;
+        flex-wrap: wrap;        
+
+        .card{
+            width: calc((100% / 3 ) - 20px);
+            margin: 10px;
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    
+}
