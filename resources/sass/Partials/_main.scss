@@ -1,8 +1,6 @@
 main{
-    background-image: url('/images/fondo-pag-speciali.jpg');
-    margin-top: 14px;
+    background-image: url('/images/fondo-pag-speciali.jpg');    
     padding: 20px;
-
     .section-title{
         font-size: 24px;
         text-transform: uppercase;
@@ -11,13 +9,37 @@ main{
     .cards{
         display: flex;
         flex-wrap: wrap;
-        padding: 5px;
+        padding: 5px;        
         .card{
             width: calc((100% / 3 ) - 20px);
             margin: 10px;
+            @media screen and (max-width: 768px) {
+            width: calc((100% / 2 ) - 20px);                
+            }
+            @media screen and (max-width: 480px) {
+                width: calc(100% - 20px);                
+                }
             img{
                 width: 100%;
             }
         }
     }    
+}
+
+.product{
+    background: red;
+    .prodotto{
+        img{
+            width: 100;
+        }
+    }
+}
+#bg-light{
+    background-image: none;
+    background-color: $light-bg;
+    
+        h1{
+            color: $main_color;
+        }   
+    
 }

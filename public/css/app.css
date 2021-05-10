@@ -32,6 +32,7 @@ body {
   background-color: #b2e5fc;
 }
 .main-nav a {
+  display: inline-block;
   text-decoration: none;
   padding: 15px;
   font-size: 22px;
@@ -40,7 +41,6 @@ body {
 
 main {
   background-image: url("/images/fondo-pag-speciali.jpg");
-  margin-top: 14px;
   padding: 20px;
 }
 main .section-title {
@@ -57,6 +57,31 @@ main .cards .card {
   width: calc((100% / 3 ) - 20px);
   margin: 10px;
 }
+@media screen and (max-width: 768px) {
+  main .cards .card {
+    width: calc((100% / 2 ) - 20px);
+  }
+}
+@media screen and (max-width: 480px) {
+  main .cards .card {
+    width: calc(100% - 20px);
+  }
+}
 main .cards .card img {
   width: 100%;
+}
+
+.product {
+  background: red;
+}
+.product .prodotto img {
+  width: 100;
+}
+
+#bg-light {
+  background-image: none;
+  background-color: #b7dae5;
+}
+#bg-light h1 {
+  color: #002d73;
 }
