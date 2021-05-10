@@ -25,21 +25,43 @@ main{
         }
     }    
 }
+/* products */
 #bg-light{
     background-image: none;
-    background-color: $light-bg;   
-        .prodotto{
-            img{
-                width: 100%;
-            }        
+    background-color: $light-bg;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $main_color;
+        a{  
+            font-size: 40px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #dcedf2;
+            i{
+                color: #fff;
+            }
+
         }
     
+        .prodotto{
+            h1{
+                text-align: center;
+                text-transform: uppercase;
+            }
+            img{
+                width: 100%;
+                display: block;
+            }
+            p{
+                
+            }     
+        }    
 }  
 
 #bg-light{
     background-image: none;
-    background-color: $light-bg;
-    
+    background-color: $light-bg;    
         h1{
             color: $main_color;
         }   

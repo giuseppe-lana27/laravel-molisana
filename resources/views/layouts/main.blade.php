@@ -21,5 +21,7 @@
         {{-- includo main --}}
         @yield('content')
         {{-- /includo main --}}
+        {{-- includo footer --}}
+        @include('parts.footer')
     </body>
 </html>

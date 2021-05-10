@@ -71,18 +71,42 @@ main .cards .card img {
   width: 100%;
 }
 
+/* products */
 #bg-light {
   background-image: none;
   background-color: #b7dae5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #002d73;
+}
+#bg-light a {
+  font-size: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #dcedf2;
+}
+#bg-light a i {
+  color: #fff;
+}
+#bg-light .prodotto h1 {
+  text-align: center;
+  text-transform: uppercase;
 }
 #bg-light .prodotto img {
   width: 100%;
+  display: block;
 }
-
 #bg-light {
   background-image: none;
   background-color: #b7dae5;
 }
 #bg-light h1 {
   color: #002d73;
+}
+
+footer {
+  background-color: grey;
+  height: 300px;
+  width: 100%;
 }

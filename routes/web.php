@@ -43,14 +43,18 @@ Route::get('/', function () {
 Route::get('prodotti/{id}', function($id) {
     $data = config('pasta');
 
-    if($id >= count($data)){
+    $length = count($data) - 1;
+
+    if($id >= $length){
         abort(404);
     }
-
+    
     $pasta = $data[$id];
      
     return view('prodotti', [
-        'pasta' => $pasta
+        'pasta' => $pasta,
+        'length' => $length,
+        'id' => $id,
     ]);
 })->where('id', '[0-9]+')->name('prodotti');
 
