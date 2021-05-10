@@ -71,11 +71,12 @@ main .cards .card img {
   width: 100%;
 }
 
-.product {
-  background: red;
+#bg-light {
+  background-image: none;
+  background-color: #b7dae5;
 }
-.product .prodotto img {
-  width: 100;
+#bg-light .prodotto img {
+  width: 100%;
 }
 
 #bg-light {

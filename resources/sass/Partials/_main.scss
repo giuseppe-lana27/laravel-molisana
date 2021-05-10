@@ -25,15 +25,17 @@ main{
         }
     }    
 }
-
-.product{
-    background: red;
-    .prodotto{
-        img{
-            width: 100;
+#bg-light{
+    background-image: none;
+    background-color: $light-bg;   
+        .prodotto{
+            img{
+                width: 100%;
+            }        
         }
-    }
-}
+    
+}  
+
 #bg-light{
     background-image: none;
     background-color: $light-bg;

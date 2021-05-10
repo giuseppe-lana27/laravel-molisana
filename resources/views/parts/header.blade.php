@@ -9,7 +9,7 @@
                     <a href="{{route('homepage')}}">Home</a>
                 </li>
                 <li class="{{Route::getCurrentRoute()->getName() == 'prodotti' ? 'active' :''}}">
-                    <a href="{{route('prodotti')}}">Prodotti</a>
+                    <a href="{{route('prodotti', ['id' => 0])}}">Prodotti</a>
                 </li>
                 <li class="{{Route::getCurrentRoute()->getName() == 'news' ? 'active' :''}}">
                     <a href="{{route('news')}}">News</a>

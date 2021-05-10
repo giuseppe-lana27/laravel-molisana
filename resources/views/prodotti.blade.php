@@ -3,8 +3,8 @@
     Prodotti    
 @endsection
 @section('content')
-    <main>
-        <div class="container product">
+    <main id='bg-light'>
+        <div class="container">
             <div class="prodotto">
                 <h1>{{$pasta['titolo']}}</h1>
                 <img src="{{$pasta['src-h']}}" alt="">

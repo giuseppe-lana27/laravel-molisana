@@ -40,7 +40,7 @@ Route::get('/', function () {
     ]);
 })->name('homepage');
 
-Route::get('prodotti/{$id}', function($id) {
+Route::get('prodotti/{id}', function($id) {
     $data = config('pasta');
 
     if($id >= count($data)){
