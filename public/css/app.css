@@ -93,10 +93,28 @@ main .cards .card img {
   text-align: center;
   text-transform: uppercase;
 }
+@media screen and (max-width: 768px) {
+  #bg-light .prodotto h1 {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #bg-light .prodotto h1 {
+    font-size: 22px;
+  }
+}
 #bg-light .prodotto img {
   width: 100%;
   display: block;
 }
+@media screen and (max-width: 768px) {
+  #bg-light .prodotto p {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+}
+
 #bg-light {
   background-image: none;
   background-color: #b7dae5;

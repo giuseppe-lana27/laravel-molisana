@@ -41,20 +41,29 @@ main{
             i{
                 color: #fff;
             }
-
-        }
-    
+        }    
         .prodotto{
             h1{
                 text-align: center;
                 text-transform: uppercase;
+                @media screen and (max-width: 768px) {
+                    font-size: 26px;
+                }
+                @media screen and (max-width: 480px) {
+                    font-size: 22px;
+                }
             }
             img{
                 width: 100%;
                 display: block;
             }
             p{
-                
+                @media screen and (max-width: 768px) {
+                    width: 80%;
+                    margin: auto;
+                    text-align: center;
+                    
+                }
             }     
         }    
 }  
